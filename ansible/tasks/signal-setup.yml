@@ -1,0 +1,33 @@
+---
+- name: Install required packages (wget and gnupg)
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - wget
+    - gnupg
+  become: yes
+
+- name: Download and import Signal Desktop GPG key
+  shell: |
+    wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > /usr/share/keyrings/signal-desktop-keyring.gpg
+  args:
+    creates: /usr/share/keyrings/signal-desktop-keyring.gpg
+  become: yes
+
+- name: Add Signal Desktop repository
+  apt_repository:
+    repo: "deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main"
+    state: present
+  become: yes
+
+- name: Update package database
+  apt:
+    update_cache: yes
+  become: yes
+
+- name: Install Signal Desktop
+  apt:
+    name: signal-desktop
+    state: present
+  become: yes
