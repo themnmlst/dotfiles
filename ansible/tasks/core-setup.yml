@@ -8,11 +8,11 @@
     - neovim
     - core
 
-- name: Install System Packages 2 (i3, tmux)
+- name: Install System Packages 2 (i3, tmux, flameshot)
 
   become: true
   apt:
-    name: ["i3", "tmux"]
+    name: ["i3", "tmux", "flameshot"]
   tags:
     - install
     - core
