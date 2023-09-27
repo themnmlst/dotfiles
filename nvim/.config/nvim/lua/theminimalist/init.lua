@@ -1,5 +1,6 @@
 require("theminimalist.set")
 require("theminimalist.remap")
+require("theminimalist.packer")
 
 function R(name)
     require("plenary.reload").reload_module(name)
