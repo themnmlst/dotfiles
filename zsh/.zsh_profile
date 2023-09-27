@@ -7,5 +7,7 @@ PERSONAL=$XDG_CONFIG_HOME/personal
 #    source $i
 #done
 
+bindkey -s ^f "tmux-sessionizer\n"
+
 export DOTFILES=$HOME/dotfiles
 
