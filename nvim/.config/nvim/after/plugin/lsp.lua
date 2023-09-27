@@ -1,9 +1,8 @@
 local lsp = require("lsp-zero")
+
 lsp.extend_lspconfig()
 
 lsp.preset("recommended")
-local lua_opts = lsp.nvim_lua_ls()
-require('lspconfig').lua_ls.setup(lua_opts)
 
 require("mason").setup()
 require('mason-lspconfig').setup({
