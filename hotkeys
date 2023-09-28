@@ -1,0 +1,138 @@
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
+./nvim/.config/nvim/after/plugin/lsp.lua:    vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+./nvim/.config/nvim/after/plugin/trouble.lua:vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>",
+./nvim/.config/nvim/after/plugin/zenmode.lua:vim.keymap.set("n", "<leader>zz", function()
+./nvim/.config/nvim/after/plugin/zenmode.lua:vim.keymap.set("n", "<leader>zZ", function()
+./nvim/.config/nvim/after/plugin/telescope.lua:vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
+./nvim/.config/nvim/after/plugin/telescope.lua:vim.keymap.set('n', '<C-p>', builtin.git_files, {})
+./nvim/.config/nvim/after/plugin/telescope.lua:vim.keymap.set('n', '<leader>ps', function()
+./nvim/.config/nvim/after/plugin/telescope.lua:vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
+./nvim/.config/nvim/after/plugin/harpoon.lua:vim.keymap.set("n", "<leader>a", mark.add_file)
+./nvim/.config/nvim/after/plugin/harpoon.lua:vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
+./nvim/.config/nvim/after/plugin/harpoon.lua:vim.keymap.set("n", "<C-h>", function() ui.nav_file(1) end)
+./nvim/.config/nvim/after/plugin/harpoon.lua:vim.keymap.set("n", "<C-j>", function() ui.nav_file(2) end)
+./nvim/.config/nvim/after/plugin/harpoon.lua:vim.keymap.set("n", "<C-k>", function() ui.nav_file(3) end)
+./nvim/.config/nvim/after/plugin/harpoon.lua:vim.keymap.set("n", "<C-l>", function() ui.nav_file(5) end)
+./nvim/.config/nvim/after/plugin/undotree.lua:vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+./nvim/.config/nvim/after/plugin/fugitive.lua:vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+./nvim/.config/nvim/after/plugin/fugitive.lua:        vim.keymap.set("n", "<leader>p", function()
+./nvim/.config/nvim/after/plugin/fugitive.lua:        vim.keymap.set("n", "<leader>P", function()
+./nvim/.config/nvim/after/plugin/fugitive.lua:        vim.keymap.set("n", "<leader>t", ":Git push -u origin ", opts);
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "J", "mzJ`z")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<C-d>", "<C-d>zz")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<C-u>", "<C-u>zz")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "n", "nzzzv")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "N", "Nzzzv")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("x", "<leader>p", [["_dP]])
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader>Y", [["+Y]])
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("i", "<C-c>", "<Esc>")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "Q", "<nop>")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/dotfiles/nvim/.config/nvim/lua/theminimalist/packer.lua<CR>");
+./nvim/.config/nvim/lua/theminimalist/remap.lua:vim.keymap.set("n", "<leader><leader>", function()
+./zsh/.zsh_profile:bindkey -s ^f "tmux-sessionizer\n"
+./i3/.config/i3/config:bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+./i3/.config/i3/config:bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+./i3/.config/i3/config:bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+./i3/.config/i3/config:bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+./i3/.config/i3/config:bindsym $mod+Return exec i3-sensible-terminal
+./i3/.config/i3/config:bindsym $mod+Shift+q kill
+./i3/.config/i3/config:bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+./i3/.config/i3/config:# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+./i3/.config/i3/config:# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+./i3/.config/i3/config:bindsym $mod+h focus left
+./i3/.config/i3/config:bindsym $mod+j focus down
+./i3/.config/i3/config:bindsym $mod+k focus up
+./i3/.config/i3/config:bindsym $mod+l focus right
+./i3/.config/i3/config:bindsym $mod+Left focus left
+./i3/.config/i3/config:bindsym $mod+Down focus down
+./i3/.config/i3/config:bindsym $mod+Up focus up
+./i3/.config/i3/config:bindsym $mod+Right focus right
+./i3/.config/i3/config:bindsym $mod+Shift+h move left
+./i3/.config/i3/config:bindsym $mod+Shift+j move down
+./i3/.config/i3/config:bindsym $mod+Shift+k move up
+./i3/.config/i3/config:bindsym $mod+Shift+l move right
+./i3/.config/i3/config:bindsym $mod+Shift+Left move left
+./i3/.config/i3/config:bindsym $mod+Shift+Down move down
+./i3/.config/i3/config:bindsym $mod+Shift+Up move up
+./i3/.config/i3/config:bindsym $mod+Shift+Right move right
+./i3/.config/i3/config:bindsym $mod+Ctrl+h split h
+./i3/.config/i3/config:bindsym $mod+Ctrl+v split v
+./i3/.config/i3/config:bindsym $mod+f fullscreen toggle
+./i3/.config/i3/config:bindsym $mod+s layout stacking
+./i3/.config/i3/config:bindsym $mod+w layout tabbed
+./i3/.config/i3/config:bindsym $mod+e layout toggle split
+./i3/.config/i3/config:bindsym $mod+Shift+space floating toggle
+./i3/.config/i3/config:bindsym $mod+space focus mode_toggle
+./i3/.config/i3/config:bindsym $mod+a focus parent
+./i3/.config/i3/config:#bindsym $mod+d focus child
+./i3/.config/i3/config:# Define names for default workspaces for which we configure key bindings later on.
+./i3/.config/i3/config:bindsym $mod+1 workspace number $ws1
+./i3/.config/i3/config:bindsym $mod+2 workspace number $ws2
+./i3/.config/i3/config:bindsym $mod+3 workspace number $ws3
+./i3/.config/i3/config:bindsym $mod+4 workspace number $ws4
+./i3/.config/i3/config:bindsym $mod+5 workspace number $ws5
+./i3/.config/i3/config:bindsym $mod+6 workspace number $ws6
+./i3/.config/i3/config:bindsym $mod+7 workspace number $ws7
+./i3/.config/i3/config:bindsym $mod+8 workspace number $ws8
+./i3/.config/i3/config:bindsym $mod+9 workspace number $ws9
+./i3/.config/i3/config:bindsym $mod+0 workspace number $ws10
+./i3/.config/i3/config:bindsym $mod+Shift+1 move container to workspace number $ws1
+./i3/.config/i3/config:bindsym $mod+Shift+2 move container to workspace number $ws2
+./i3/.config/i3/config:bindsym $mod+Shift+3 move container to workspace number $ws3
+./i3/.config/i3/config:bindsym $mod+Shift+4 move container to workspace number $ws4
+./i3/.config/i3/config:bindsym $mod+Shift+5 move container to workspace number $ws5
+./i3/.config/i3/config:bindsym $mod+Shift+6 move container to workspace number $ws6
+./i3/.config/i3/config:bindsym $mod+Shift+7 move container to workspace number $ws7
+./i3/.config/i3/config:bindsym $mod+Shift+8 move container to workspace number $ws8
+./i3/.config/i3/config:bindsym $mod+Shift+9 move container to workspace number $ws9
+./i3/.config/i3/config:bindsym $mod+Shift+0 move container to workspace number $ws10
+./i3/.config/i3/config:bindsym $mod+Shift+c reload
+./i3/.config/i3/config:bindsym $mod+Shift+r restart
+./i3/.config/i3/config:bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+./i3/.config/i3/config:        # These bindings trigger as soon as you enter the resize mode
+./i3/.config/i3/config:        bindsym j resize shrink width 10 px or 10 ppt
+./i3/.config/i3/config:        bindsym k resize grow height 10 px or 10 ppt
+./i3/.config/i3/config:        bindsym l resize shrink height 10 px or 10 ppt
+./i3/.config/i3/config:        bindsym odiaeresis resize grow width 10 px or 10 ppt
+./i3/.config/i3/config:        # same bindings, but for the arrow keys
+./i3/.config/i3/config:        bindsym Left resize shrink width 10 px or 10 ppt
+./i3/.config/i3/config:        bindsym Down resize grow height 10 px or 10 ppt
+./i3/.config/i3/config:        bindsym Up resize shrink height 10 px or 10 ppt
+./i3/.config/i3/config:        bindsym Right resize grow width 10 px or 10 ppt
+./i3/.config/i3/config:        bindsym Return mode "default"
+./i3/.config/i3/config:        bindsym Escape mode "default"
+./i3/.config/i3/config:        bindsym $mod+r mode "default"
+./i3/.config/i3/config:bindsym $mod+r mode "resize"
+./i3/.config/i3/config:bindsym Print exec --no-startup-id /usr/bin/flameshot gui
+./tmux/.tmux.conf:bind r source-file ~/.tmux.conf
+./tmux/.tmux.conf:bind -T copy-mode-vi v send-keys -X begin-selection
+./tmux/.tmux.conf:bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
+./tmux/.tmux.conf:bind -r ^ last-window
+./tmux/.tmux.conf:bind -r k select-pane -U
+./tmux/.tmux.conf:bind -r j select-pane -D
+./tmux/.tmux.conf:bind -r h select-pane -L
+./tmux/.tmux.conf:bind -r l select-pane -R
+./tmux/.tmux.conf:bind -r D neww -c "#{pane_current_path}" "[[ -e TODO.md ]] && nvim TODO.md || nvim ~/personal/todo.md"
+./tmux/.tmux.conf:bind-key -r f run-shell "tmux neww ~/.local/bin/tmux-sessionizer"
+./tmux/.tmux.conf:bind-key -r i run-shell "tmux neww tmux-cht.sh"
