@@ -10,5 +10,3 @@ PERSONAL=$XDG_CONFIG_HOME/personal
 bindkey -s ^f "tmux-sessionizer\n"
 
 export DOTFILES=$HOME/dotfiles
-
-addToPathFront $HOME/.local
