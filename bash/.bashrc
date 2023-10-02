@@ -129,4 +129,3 @@ bind '"\C-f":"tmux-sessionizer\n"'
 
 export DOTFILES=$HOME/dotfiles
 
-
