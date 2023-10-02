@@ -1,5 +1,6 @@
-# Adding git display to my prompt
+if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
 
+# Adding git display to my prompt
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
 }

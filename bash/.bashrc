@@ -85,7 +85,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -116,16 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export XDG_CONFIG_HOME=$HOME/.config
-VIM="nvim"
-
-PERSONAL=$XDG_CONFIG_HOME/personal
-#source $PERSONAL/env
-#for i in `find -L $PERSONAL`; do
-#    source $i
-#done
-
 bind '"\C-f":"tmux-sessionizer\n"'
-
+PERSONAL=$XDG_CONFIG_HOME/personal
 export DOTFILES=$HOME/dotfiles
+export XDG_CONFIG_HOME=$HOME/.config
 
