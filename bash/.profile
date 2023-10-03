@@ -26,5 +26,8 @@ if [ -d "usr/local/bin" ] ; then
 fi
 
 # ENVIRONMENT VARIABLES 
+export PERSONAL=$XDG_CONFIG_HOME/personal
+export DOTFILES=$HOME/dotfiles
+export XDG_CONFIG_HOME=$HOME/.config
 
 # ALIASES
