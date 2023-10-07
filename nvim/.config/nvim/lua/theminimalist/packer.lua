@@ -36,12 +36,11 @@ return require('packer').startup(function(use)
 
 
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
+  use("nvim-treesitter/nvim-treesitter-context");
   use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
-  use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
-  use("nvim-treesitter/nvim-treesitter-context");
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -53,19 +52,19 @@ return require('packer').startup(function(use)
 		  {'williamboman/mason-lspconfig.nvim'},
 
 		  -- Autocompletion
-		  {'hrsh7th/nvim-cmp'},
-		  {'hrsh7th/cmp-buffer'},
-		  {'hrsh7th/cmp-path'},
-		  {'saadparwaiz1/cmp_luasnip'},
+		  {'hrsh7th/nvim-cmp'}, -- The completion plugin
+		  {'hrsh7th/cmp-buffer'}, -- buffer completions
+		  {'hrsh7th/cmp-path'}, -- path completions
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'hrsh7th/cmp-nvim-lua'},
+		  {'saadparwaiz1/cmp_luasnip'}, -- snippet completions
 
 		  -- Snippets
-		  {'L3MON4D3/LuaSnip'},
-		  {'rafamadriz/friendly-snippets'},
+		  {'L3MON4D3/LuaSnip'}, -- snippet engine
+		  {'rafamadriz/friendly-snippets'}, -- lots of snippets
 	  }
   }
 
-  use("folke/zen-mode.nvim")
+  use("folke/zen-mode.nvim") -- zen mode genius
 
 end)
