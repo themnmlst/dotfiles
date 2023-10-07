@@ -1,1 +1,3 @@
-# dotfiles - inspired by ThePrimeagen
+# dotfiles
+## inspired by ThePrimeagen
+
