@@ -6,6 +6,5 @@ PERSONAL=$XDG_CONFIG_HOME/personal
 #source $i
 #done
 
-bindkey -s ^f "tmux-sessionizer\n"
-
+bindkey -s ^f "/home/theminimalist/.local/bin/tmux-sessionizer\n"
 export DOTFILES=$HOME/dotfiles
