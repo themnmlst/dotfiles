@@ -2,7 +2,7 @@ local lsp = require("lsp-zero")
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer', 'intelephense'},
+  ensure_installed = {'tsserver', 'rust_analyzer', 'intelephense', 'vimls', 'lua_ls'},
   handlers = {
     lsp.default_setup,
     lua_ls = function()
