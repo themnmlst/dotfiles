@@ -2,7 +2,7 @@ local lsp = require("lsp-zero")
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer'},
+  ensure_installed = {'tsserver', 'rust_analyzer', 'intelephense'},
   handlers = {
     lsp.default_setup,
     lua_ls = function()
@@ -12,19 +12,6 @@ require('mason-lspconfig').setup({
   },
 })
 lsp.preset("recommended")
-
-local cmp = require('cmp')
-
-cmp.setup({
-  sources = {
-    {name = 'path'},
-    {name = 'nvim_lsp'},
-    {name = 'nvim_lua'},
-  },
-  mapping = cmp.mapping.preset.insert({
-    ['<C-Space>'] = cmp.mapping.complete(),
-  }),
-})
 
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}

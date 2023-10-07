@@ -6,13 +6,8 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
-  use {
-      --'nvim-telescope/telescope.nvim', tag = '0.1.0',
-	  'nvim-telescope/telescope.nvim',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-telescope/telescope.nvim'
 
   use({
 	  'rose-pine/neovim',
@@ -55,6 +50,7 @@ return require('packer').startup(function(use)
 		  {'hrsh7th/nvim-cmp'}, -- The completion plugin
 		  {'hrsh7th/cmp-buffer'}, -- buffer completions
 		  {'hrsh7th/cmp-path'}, -- path completions
+		  {'hrsh7th/cmp-cmdline'}, -- cmdline completions
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'hrsh7th/cmp-nvim-lua'},
 		  {'saadparwaiz1/cmp_luasnip'}, -- snippet completions
