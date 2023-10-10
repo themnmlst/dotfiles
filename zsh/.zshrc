@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -r ~/.aliasrc ]]; then
     . ~/.aliasrc
 fi
+export PATH="$HOME/.local/bin:$PATH"
 
 source ~/.zsh_profile
 
