@@ -2,7 +2,7 @@ local lsp = require("lsp-zero")
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer', 'intelephense', 'vimls', 'lua_ls'},
+  ensure_installed = {'tsserver', 'rust_analyzer', 'intelephense', 'vimls', 'lua_ls', 'clangd'},
   handlers = {
     lsp.default_setup,
     lua_ls = function()
@@ -10,6 +10,20 @@ require('mason-lspconfig').setup({
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
   },
+  settings = {
+
+		Lua = {
+			diagnostics = {
+				globals = { "vim" },
+			},
+			workspace = {
+				library = {
+					[vim.fn.expand("$VIMRUNTIME/lua")] = true,
+					[vim.fn.stdpath("config") .. "/lua"] = true,
+				},
+			},
+		},
+	},
 })
 lsp.preset("recommended")
 
