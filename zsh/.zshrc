@@ -103,5 +103,9 @@ if [[ -r ~/.aliasrc ]]; then
 fi
 export PATH="$HOME/.local/bin:$PATH"
 
-source ~/.zsh_profile
+source ~/.zsh_profile   
+export PATH=$PATH:/home/theminimalist/worldbanc/private/bin
 
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
