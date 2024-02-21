@@ -103,9 +103,19 @@ if [[ -r ~/.aliasrc ]]; then
 fi
 export PATH="$HOME/.local/bin:$PATH"
 
-source ~/.zsh_profile   
+source ~/.zsh_profile
 export PATH=$PATH:/home/theminimalist/worldbanc/private/bin
 
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# added by Webi for pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
