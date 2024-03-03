@@ -194,6 +194,15 @@ exec firefox
 assign [class="Alacritty"] $workspace3
 exec alacritty
 
+assign [class="Signal"] $workspace9
+exec signal-desktop
+
+assign [class="discord"] $workspace8
+exec discord
+
+assign [class="FreeTube"] $workspace2
+exec freetube
+
 # Programmer's DVORAK
 exec --no-startup-id xmodmap /home/theminimalist/dotfiles/xmodmap/./xmodmap
 

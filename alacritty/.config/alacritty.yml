@@ -1,2 +1,8 @@
 window:
   opacity: 0.0
+# Font config:
+font:
+    # Normal (roman):
+    normal:
+        family: Hack Nerd Font Mono
+        style: Regular
