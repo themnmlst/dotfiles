@@ -7,8 +7,8 @@ if not vim.loop.fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
-require("lua.theminimalist.settings")
-require("lua.theminimalist.remap")
+require("theminimalist.settings")
+require("theminimalist.remap")
 
 require("lazy").setup({
 	{ import = "theminimalist.plugins" },
