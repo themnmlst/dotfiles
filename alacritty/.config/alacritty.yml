@@ -1,8 +1,27 @@
 window:
   opacity: 0.0
-# Font config:
+
 font:
-    # Normal (roman):
-    normal:
-        family: Hack Nerd Font Mono
-        style: Regular
+  # Normal text settings
+  normal:
+    family: Hack Nerd Font Mono  # Font family for normal text
+    style: Regular               # Font style for normal text
+
+  # Bold text settings
+  bold:
+    family: Hack Nerd Font Mono  # Font family for bold text
+    # Optional: Specify a style for bold text if different from normal
+    style: Bold                  # Explicitly specifying bold style
+
+  # Italic text settings
+  italic:
+    family: Hack Nerd Font Mono  # Font family for italic text
+    # Optional: Specify a style for italic text if different from normal
+    style: Italic                # Explicitly specifying italic style
+
+  # Bold-Italic text settings
+  bold_italic:
+    family: Hack Nerd Font Mono  # Font family for bold italic text
+    # Optional: Specify a style for bold italic text if different from normal
+    style: Bold Italic           # Explicitly specifying bold italic style
+

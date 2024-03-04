@@ -46,3 +46,21 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 -- This opens :netrw
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "file[V]iewer" })
+
+-- This enables tmux-sessionizer to be called directly from neovim.
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+
+-- This moves the highlight up or down, and snaps it in place.
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- With this mapping, the cursor will return to its original position after the lines are joined, improving workflow efficiency by maintaining cursor position.
+vim.keymap.set("n", "J", "mzJ`z")
+
+-- after you scroll up or down with Ctrl+u or Ctrl+d, the screen automatically centers on the line where your cursor is located.
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+--  the cursor's line is always centered on the screen after moving to the next or previous search result, and by automatically unfolding any folded text that contains a search result.
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
