@@ -1,3 +1,6 @@
 [submodule "personal"]
 	path = personal
 	url = git@github.com:themnmlst/personal.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:themnmlst/nvim.git
