@@ -191,17 +191,20 @@ exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rate 144.00
 assign [class="Firefox"] $workspace1
 exec firefox
 
+assign [class="FreeTube"] $workspace2
+exec freetube
+
 assign [class="Alacritty"] $workspace3
 exec alacritty
 
-assign [class="Signal"] $workspace9
-exec signal-desktop
+assign [class="Gimp"] $workspace7
+exec gimp
 
 assign [class="discord"] $workspace8
 exec discord
 
-assign [class="FreeTube"] $workspace2
-exec freetube
+assign [class="Signal"] $workspace9
+exec signal-desktop
 
 # Programmer's DVORAK
 exec --no-startup-id xmodmap /home/theminimalist/dotfiles/xmodmap/./xmodmap
