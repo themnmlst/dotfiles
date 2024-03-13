@@ -1,23 +1,31 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
 general {
         output_format = "i3bar"
         colors = true
-        interval = 5
+        interval = 1
 }
 
-order += "ipv6"
-order += "disk /"
-order += "run_watch DHCP"
-order += "run_watch VPNC"
-order += "path_exists VPN"
-order += "wireless wlan0"
-order += "ethernet eth0"
-order += "battery 0"
-order += "cpu_temperature 0"
-order += "memory"
-order += "load"
+#order += "ipv6"
+#order += "disk /"
+#order += "run_watch DHCP"
+#order += "run_watch VPNC"
+#order += "path_exists VPN"
+#order += "wireless wlan0"
+#order += "ethernet enp2s0"
+#order += "battery 0"
+#order += "cpu_temperature 0"
+#order += "memory"
+#order += "load"
 order += "tztime local"
 order += "tztime berlin"
-order += "volume master"
+#order += "volume master"
 
 volume master {
         format = "♪: %volume"
@@ -32,7 +40,7 @@ wireless wlan0 {
         format_down = "W: down"
 }
 
-ethernet eth0 {
+ethernet enp2s0 {
         format_up = "E: %ip (%speed)"
         format_down = "E: down"
 }
@@ -88,9 +96,13 @@ memory {
 }
 
 disk "/" {
-        format = "%free"
+    format = "%percentage_avail avail"
 }
 
 read_file uptime {
         path = "/proc/uptime"
+}
+
+bar {
+    tray_output primary
 }
